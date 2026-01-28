@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectividade & IoT | Syncflow</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .page-header {
+            background: linear-gradient(to right, rgba(5, 10, 20, 0.95), rgba(5, 10, 20, 0.6)), 
+                        url('img/slide-conectividade.jpg'); 
+            background-size: cover;
+            background-position: center;
+            padding: 6rem 2rem 4rem 2rem;
+            border-bottom: 2px solid var(--accent-cyan);
+            margin-top: -5px;
+        }
+        .content-section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+        .content-section h3 { color: var(--accent-cyan); margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; }
+        .content-section p { margin-bottom: 1.2rem; font-size: 1.1rem; color: #cbd5e1; text-align: justify; }
+        .check-list { list-style: none; margin: 2rem 0; }
+        .check-list li { margin-bottom: 0.8rem; display: flex; align-items: center; font-size: 1.1rem; color: var(--text-main); }
+        .check-list li::before { content: '✓'; color: var(--accent-cyan); font-weight: bold; margin-right: 15px; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar"><span>📞 (11) 99999-9999</span><span>✉️ contato@syncflow.com.br</span></div>
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html"><img src="logo-syncflow.png" alt="Syncflow Logo"></a></div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#diferenciais">Diferenciais</a></li>
+            <li><a href="contato.html" class="nav-btn-contact">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <div style="max-width: 1150px; margin: 0 auto;">
+            <h1 style="font-size: 3rem; color: white; margin-bottom: 0.5rem;">Conectividade e Monitoramento</h1>
+            <p style="color: var(--accent-cyan); font-family: var(--code-font); font-weight: bold;">TELEMETRIA, IOT & GESTÃO DE DADOS</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <p>Dados isolados não geram valor. O verdadeiro poder da indústria moderna está na capacidade de conectar ativos, extrair informações em tempo real e tomar decisões baseadas em fatos, não em suposições.</p>
+        
+        <p>A Syncflow desenvolve a ponte completa entre o chão de fábrica (ou o campo) e a nuvem. Criamos soluções de telemetria robustas que permitem ler sensores, hidrômetros e medidores de energia de qualquer lugar do mundo.</p>
+
+        <p>Não entregamos apenas a conexão; entregamos a inteligência. Nossos gateways filtram e tratam os dados antes do envio, economizando banda e garantindo que apenas informações úteis cheguem ao seu painel de controle.</p>
+
+        <h3>Nossas Especialidades:</h3>
+        <ul class="check-list">
+            <li><strong>Protocolos Industriais e IoT:</strong> Domínio de MQTT, Modbus, HTTP/REST e integração com redes LoRaWAN, Wi-Fi ou GPRS/4G.</li>
+            <li><strong>Monitoramento de Saneamento:</strong> Sistemas dedicados para leitura remota de vazão, pressão e níveis de reservatórios, combatendo perdas e desperdícios.</li>
+            <li><strong>Gestão de Energia:</strong> Telemetria de grandezas elétricas para eficiência energética e predição de falhas.</li>
+            <li><strong>Dashboards Personalizados:</strong> Visualização de dados clara e objetiva para gestores e operadores.</li>
+        </ul>
+
+        <h3>Aplicações Típicas:</h3>
+        <p>Utilities (Água e Energia), Agronegócio Conectado, Gestão de Frota Industrial e Monitoramento Ambiental.</p>
+
+        <br><br>
+        <a href="contato.html" class="cta-button">Solicitar Projeto de Telemetria</a>
+        <br><br>
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem;">&larr; Voltar para Home</a>
+    </section>
+
+    <footer><p>&copy; 2026 Syncflow - Medição, Controle e Inteligência.</p></footer>
+    <script>function toggleMenu() { document.getElementById('nav-links').classList.toggle('active'); }</script>
+</body>
+</html>

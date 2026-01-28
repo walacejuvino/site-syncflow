@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Syncflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>📞 (11) 99999-9999</span>
+        <span>✉️ contato@syncflow.com.br</span>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="logo-syncflow.png" alt="Syncflow Logo">
+            </a>
+        </div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#diferenciais">Diferenciais</a></li>
+            <li><a href="#" class="nav-btn-contact" style="background: rgba(0, 242, 255, 0.2);">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="contato-page" style="padding-top: 4rem;">
+        
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2>Fale com nossa Engenharia</h2>
+            <p style="color: var(--text-muted);">Preencha o formulário abaixo e conversaremos sobre seu desafio.</p>
+        </div>
+
+        <div class="contact-container">
+            <form action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+                
+                <input type="hidden" name="_subject" value="Novo Lead via Site Syncflow!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <div class="form-group">
+                    <label for="nome">SEU NOME / EMPRESA</label>
+                    <input type="text" id="nome" name="name" class="form-control" placeholder="Ex: Walace Juvino" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-MAIL CORPORATIVO</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="nome@empresa.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="whatsapp">WHATSAPP / TELEFONE</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" class="form-control" placeholder="(DD) 99999-9999" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">DESAFIO OU PROJETO</label>
+                    <textarea id="mensagem" name="message" class="form-control" placeholder="Descreva sua necessidade..." required></textarea>
+                </div>
+
+                <button type="submit" class="cta-button" style="width: 100%; border:0;">Enviar Solicitação</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Syncflow - Medição, Controle e Inteligência.</p>
+        <p style="margin-top: 0.5rem;">Brasil</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

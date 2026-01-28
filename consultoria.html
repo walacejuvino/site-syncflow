@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria e Treinamentos | Syncflow</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .page-header {
+            background: linear-gradient(to right, rgba(5, 10, 20, 0.95), rgba(5, 10, 20, 0.6)), 
+                        url('img/slide-consultoria.jpg'); 
+            background-size: cover;
+            background-position: center;
+            padding: 6rem 2rem 4rem 2rem;
+            border-bottom: 2px solid var(--accent-cyan);
+            margin-top: -5px;
+        }
+        .content-section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+        .content-section h3 { color: var(--accent-cyan); margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; }
+        .content-section p { margin-bottom: 1.2rem; font-size: 1.1rem; color: #cbd5e1; text-align: justify; }
+        .check-list { list-style: none; margin: 2rem 0; }
+        .check-list li { margin-bottom: 0.8rem; display: flex; align-items: center; font-size: 1.1rem; color: var(--text-main); }
+        .check-list li::before { content: '✓'; color: var(--accent-cyan); font-weight: bold; margin-right: 15px; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar"><span>📞 (11) 99999-9999</span><span>✉️ contato@syncflow.com.br</span></div>
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html"><img src="logo-syncflow.png" alt="Syncflow Logo"></a></div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#diferenciais">Diferenciais</a></li>
+            <li><a href="contato.html" class="nav-btn-contact">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <div style="max-width: 1150px; margin: 0 auto;">
+            <h1 style="font-size: 3rem; color: white; margin-bottom: 0.5rem;">Consultoria e Treinamentos</h1>
+            <p style="color: var(--accent-cyan); font-family: var(--code-font); font-weight: bold;">TRANSFERÊNCIA DE KNOW-HOW & MODERNIZAÇÃO</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <p>A tecnologia avança rápido, e manter a equipe técnica atualizada ou modernizar processos fabris pode ser um desafio. A Syncflow atua como o braço tecnológico da sua empresa, oferecendo consultoria especializada para destravar gargalos.</p>
+        
+        <p>Não entregamos apenas relatórios teóricos. Nossa consultoria é "mão na massa", baseada na experiência real de campo e desenvolvimento. Ajudamos sua empresa a escolher as melhores tecnologias (microcontroladores, sensores, arquitetura de rede) para novos projetos ou a diagnosticar problemas crônicos na planta atual.</p>
+
+        <p>Além disso, oferecemos treinamentos técnicos in-company, nivelando o conhecimento da sua equipe de manutenção e engenharia para lidar com as novas demandas da Indústria 4.0.</p>
+
+        <h3>O que oferecemos:</h3>
+        <ul class="check-list">
+            <li><strong>Treinamentos Técnicos:</strong> Cursos práticos sobre programação de microcontroladores (ESP32/Arduino), eletrônica básica e instrumentação.</li>
+            <li><strong>Consultoria de Projetos:</strong> Apoio na especificação técnica de novos produtos e viabilidade econômica de P&D.</li>
+            <li><strong>Modernização de Processos:</strong> Diagnóstico para digitalização de linhas de produção e implementação de coleta de dados.</li>
+            <li><strong>Mentoria para Equipes:</strong> Acompanhamento técnico para times de desenvolvimento júnior.</li>
+        </ul>
+
+        <h3>Público-Alvo:</h3>
+        <p>Equipes de Manutenção, Engenharia de Produtos, Startups de Hardware e Gestores Industriais.</p>
+
+        <br><br>
+        <a href="contato.html" class="cta-button">Agendar Conversa com Consultor</a>
+        <br><br>
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem;">&larr; Voltar para Home</a>
+    </section>
+
+    <footer><p>&copy; 2026 Syncflow - Medição, Controle e Inteligência.</p></footer>
+    <script>function toggleMenu() { document.getElementById('nav-links').classList.toggle('active'); }</script>
+</body>
+</html>

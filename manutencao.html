@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção Industrial | Syncflow</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .page-header {
+            background: linear-gradient(to right, rgba(5, 10, 20, 0.95), rgba(5, 10, 20, 0.6)), 
+                        url('img/slide-manutencao.jpg'); 
+            background-size: cover;
+            background-position: center;
+            padding: 6rem 2rem 4rem 2rem;
+            border-bottom: 2px solid var(--accent-cyan);
+            margin-top: -5px;
+        }
+        .content-section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+        .content-section h3 { color: var(--accent-cyan); margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; }
+        .content-section p { margin-bottom: 1.2rem; font-size: 1.1rem; color: #cbd5e1; text-align: justify; }
+        .check-list { list-style: none; margin: 2rem 0; }
+        .check-list li { margin-bottom: 0.8rem; display: flex; align-items: center; font-size: 1.1rem; color: var(--text-main); }
+        .check-list li::before { content: '✓'; color: var(--accent-cyan); font-weight: bold; margin-right: 15px; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar"><span>📞 (11) 99999-9999</span><span>✉️ contato@syncflow.com.br</span></div>
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html"><img src="logo-syncflow.png" alt="Syncflow Logo"></a></div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#diferenciais">Diferenciais</a></li>
+            <li><a href="contato.html" class="nav-btn-contact">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <div style="max-width: 1150px; margin: 0 auto;">
+            <h1 style="font-size: 3rem; color: white; margin-bottom: 0.5rem;">Manutenção Industrial</h1>
+            <p style="color: var(--accent-cyan); font-family: var(--code-font); font-weight: bold;">DIAGNÓSTICO, REPARO & PREVENÇÃO</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <p>Um equipamento parado é prejuízo na certa. Mas a solução nem sempre é comprar um novo. Na Syncflow, somos especialistas em "salvar" ativos industriais através de manutenção eletrônica profunda.</p>
+        
+        <p>Nosso laboratório conta com instrumentação avançada para realizar reparos a nível de componente. Não somos apenas "trocadores de placa"; analisamos o circuito, identificamos a causa raiz da falha (seja térmica, desgaste ou surto elétrico) e restauramos a funcionalidade original.</p>
+
+        <p>Atuamos com as principais marcas do mercado (Siemens, WEG, Schneider, Rockwell, Danfoss), garantindo que seu Inversor ou CLP volte para a linha de produção confiável e testado.</p>
+
+        <h3>Escopo de Atuação:</h3>
+        <ul class="check-list">
+            <li><strong>Eletrônica de Potência:</strong> Reparo em Inversores de Frequência, Soft-starters e Servo-drives de baixa e média tensão.</li>
+            <li><strong>Automação:</strong> Recuperação de CLPs, IHMs (Interfaces Homem-Máquina) e Fontes Industriais.</li>
+            <li><strong>Preventiva em Bancada:</strong> Limpeza química, troca de capacitores eletrolíticos envelhecidos e renovação de pasta térmica.</li>
+            <li><strong>Testes de Carga:</strong> Simulação de funcionamento real antes da entrega do equipamento.</li>
+        </ul>
+
+        <h3>Aplicações Típicas:</h3>
+        <p>Indústrias Metalúrgicas, Alimentícias, Estações de Tratamento de Água e Linhas de Montagem Automatizadas.</p>
+
+        <br><br>
+        <a href="contato.html" class="cta-button">Enviar Equipamento para Análise</a>
+        <br><br>
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem;">&larr; Voltar para Home</a>
+    </section>
+
+    <footer><p>&copy; 2026 Syncflow - Medição, Controle e Inteligência.</p></footer>
+    <script>function toggleMenu() { document.getElementById('nav-links').classList.toggle('active'); }</script>
+</body>
+</html>

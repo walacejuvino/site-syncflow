@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Inteligentes | Syncflow</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* CSS Específico desta página */
+        .page-header {
+            /* Foto de fundo focada em desenvolvimento */
+            background: linear-gradient(to right, rgba(5, 10, 20, 0.95), rgba(5, 10, 20, 0.6)), 
+                        url('img/slide-dev.jpg'); 
+            background-size: cover;
+            background-position: center;
+            padding: 6rem 2rem 4rem 2rem;
+            border-bottom: 2px solid var(--accent-cyan);
+            margin-top: -5px;
+        }
+
+        .content-section {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .content-section h3 { 
+            color: var(--accent-cyan); 
+            margin-top: 2.5rem; 
+            margin-bottom: 1rem; 
+            font-size: 1.5rem;
+        }
+
+        .content-section p { 
+            margin-bottom: 1.2rem; 
+            font-size: 1.1rem; 
+            color: #cbd5e1;
+            text-align: justify;
+        }
+
+        .check-list { list-style: none; margin: 2rem 0; }
+        .check-list li { 
+            margin-bottom: 0.8rem; 
+            display: flex; 
+            align-items: center; 
+            font-size: 1.1rem;
+            color: var(--text-main);
+        }
+        .check-list li::before { 
+            content: '✓'; 
+            color: var(--accent-cyan); 
+            font-weight: bold; 
+            margin-right: 15px; 
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>📞 (11) 99999-9999</span>
+        <span>✉️ contato@syncflow.com.br</span>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="logo-syncflow.png" alt="Syncflow Logo">
+            </a>
+        </div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#diferenciais">Diferenciais</a></li>
+            <li><a href="contato.html" class="nav-btn-contact">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <div style="max-width: 1150px; margin: 0 auto;">
+            <h1 style="font-size: 3rem; color: white; margin-bottom: 0.5rem;">Sistemas Inteligentes</h1>
+            <p style="color: var(--accent-cyan); font-family: var(--code-font); font-weight: bold;">FIRMWARE, HARDWARE & EMBEDDED SYSTEMS</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        
+        <p>No cenário industrial atual, um equipamento não é apenas metal e motor; ele é dados, lógica e conectividade. Na Syncflow, projetamos o "cérebro" da sua operação.</p>
+        
+        <p>Transformamos ideias e necessidades operacionais em <strong>hardware robusto</strong> e <strong>firmware otimizado</strong>. Atuamos desde a concepção do circuito eletrônico (PCB) até a programação de baixo nível que garante que o equipamento funcione 24/7 sem travamentos, mesmo em ambientes agressivos.</p>
+
+        <p>Nossa engenharia domina as principais arquiteturas de microcontroladores do mercado (ESP32, STM32, ARM), garantindo que seu produto tenha performance industrial com custo viável de escala.</p>
+
+        <h3>O que desenvolvemos:</h3>
+        <ul class="check-list">
+            <li><strong>Firmware de Alta Performance:</strong> Código em C/C++ otimizado, uso de RTOS (Sistemas em Tempo Real) e arquitetura modular para fácil manutenção.</li>
+            <li><strong>Design de Hardware (PCB):</strong> Projetos de placas de circuito impresso com proteção contra ruídos EMI/EMC, prontas para certificação.</li>
+            <li><strong>Integração de Sensores:</strong> Leitura precisa de grandezas físicas (pressão, vazão, temperatura) e atuadores industriais.</li>
+            <li><strong>Edge Computing:</strong> Processamento de dados na própria borda (no equipamento), reduzindo latência e dependência da nuvem.</li>
+        </ul>
+
+        <h3>Aplicações Típicas:</h3>
+        <p>Controladores para saneamento (hidrômetros inteligentes), automação de máquinas agrícolas, sistemas de monitoramento industrial e dispositivos IoT personalizados.</p>
+
+        <br><br>
+        
+        <a href="contato.html" class="cta-button">Falar com Engenharia de Desenvolvimento</a>
+        
+        <br><br>
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem;">&larr; Voltar para Home</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Syncflow - Medição, Controle e Inteligência.</p>
+        <p style="margin-top: 0.5rem;">Brasil</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
